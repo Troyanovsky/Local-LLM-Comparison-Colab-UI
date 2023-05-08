@@ -17,12 +17,12 @@ llama.cpp: https://github.com/ggerganov/llama.cpp
 Original responses can be found at: https://docs.google.com/spreadsheets/d/1ogDXUiaBx3t7EpMo44aaA6U6kLXX0x2tGRgLg8CISGs/edit?usp=sharing
 
 Average Scores:  
+- wizardLM-7B.q4_2 (in GPT4All)	9.727272727  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	9.727272727  
+- vicuna-13b-1.1-q4_1 (in GPT4All)	8.909090909  
+- koala-13B-4bit-128g.GGML (using llama.cpp)	8.727272727  
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	6.090909091  
 - gpt4all-j-v1.3-groovy (in GPT4All)	6.909090909  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	8.727272727  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	8.909090909  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	9.727272727  
-- wizardLM-7B.q4_2 (in GPT4All)	9.727272727  
 
 ### Question 1: Translate the following English text into French: "The sun rises in the east and sets in the west."  
 Task Domain: Translation  
