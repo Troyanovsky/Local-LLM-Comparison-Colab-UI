@@ -6,6 +6,7 @@ These models work better among the models I tested on my hardware (i5-12490F, 32
 - wizardLM-7B.q4_2 (in GPT4ALL)
 - gpt4all-j-v1.3-groovy (in GPT4All)
 - vicuna-13b-1.1-q4_1 (in GPT4All)
+- mpt-7b-chat (in GPT4All): https://huggingface.co/mosaicml/mpt-7b-chat
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp): https://huggingface.co/Bradarr/gpt4-x-alpaca-13b-native-ggml-model-q4_0
 - koala-13B-4bit-128g.GGML (using llama.cpp): https://huggingface.co/TheBloke/koala-13B-GPTQ-4bit-128g-GGML
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp): https://huggingface.co/TheBloke/wizard-vicuna-13B-GGML
