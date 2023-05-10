@@ -10,7 +10,7 @@ These models work better among the models I tested on my hardware (i5-12490F, 32
 - koala-13B-4bit-128g.GGML (using llama.cpp): https://huggingface.co/TheBloke/koala-13B-GPTQ-4bit-128g-GGML
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp): https://huggingface.co/TheBloke/wizard-vicuna-13B-GGML
 
-GPT4ALl: https://github.com/nomic-ai/gpt4all-chat
+GPT4ALl: https://github.com/nomic-ai/gpt4all-chat  
 llama.cpp: https://github.com/ggerganov/llama.cpp
 
 ## Questions and scores
