@@ -19,6 +19,7 @@ Original responses can be found at: https://docs.google.com/spreadsheets/d/1ogDX
 Average Scores:  
 - wizardLM-7B.q4_2 (in GPT4All)	9.727272727  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	9.727272727  
+- mpt-7b-chat (in GPT4All)	9.090909091  
 - vicuna-13b-1.1-q4_1 (in GPT4All)	8.909090909  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	8.727272727  
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	6.090909091  
@@ -33,7 +34,8 @@ Explanation: This task tests the model's ability to understand and accurately tr
 - vicuna-13b-1.1-q4_1 (in GPT4All)	9	  
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	1	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	8	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10  
+- mpt-7b-chat (in GPT4All) 5  
 
 ### Question 2: Summarize the following text: "The water cycle is a natural process that involves the continuous movement of water on, above, and below the Earth's surface. It includes various stages like evaporation, condensation, precipitation, and runoff. This cycle plays a crucial role in maintaining Earth's water balance and supporting life."  
 Task Domain: Summary  
@@ -45,6 +47,7 @@ Explanation: This task evaluates the model's ability to extract the main points 
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	6	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	8	  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	9	  
+- mpt-7b-chat (in GPT4All) 9  
 
 ### Question 3: I want you to act as a senior software developer with deep knowledge in system desing, frontend programming, and backend programming. Provide a high level design of a mental health journal app. Include the frontend and backend components. Do not write code.  
 Task Domain: App Design  
@@ -55,6 +58,7 @@ Explanation: This task evaluates the model's ability to closely follow user's in
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	9	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	9	  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	9	  
+- mpt-7b-chat (in GPT4All) 9
 
 ### Question 4: What are the main causes of the French Revolution according to this passage: "The French Revolution, which took place between 1789 and 1799, was rooted in financial crises, social inequality, and Enlightenment ideas."  
 Task Domain: Abstractive Question Answering  
@@ -66,6 +70,7 @@ Explanation: This task tests the model's ability to understand the context and g
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	5	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
+- mpt-7b-chat (in GPT4All) 10  
 
 ### Question 5: In the following text, identify the two artists mentioned: "During the Renaissance, Leonardo da Vinci and Michelangelo were two of the most influential artists who created masterpieces that continue to inspire people today."  
 Task Domain: Extractive Question Answering  
@@ -77,6 +82,7 @@ Explanation: This task assesses the model's ability to extract specific informat
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	8	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
+- mpt-7b-chat (in GPT4All) 10  
 
 ### Question 6: Determine the sentiment of this customer review: "I had a fantastic experience at this restaurant. The food was delicious, and the service was outstanding."  
 Task Domain: Sentiment Analysis  
@@ -88,6 +94,7 @@ Explanation: This task evaluates the model's ability to analyze text and identif
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	10	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
+- mpt-7b-chat (in GPT4All) 10
 
 ### Question 7: Classify the following text into one of these categories: Sports, Technology, Health, or Politics: "Apple recently unveiled its latest iPhone, featuring a faster processor and improved battery life."  
 Task Domain: Zero-shot Classification  
@@ -99,6 +106,7 @@ Explanation: This task tests the model's ability to classify text into predefine
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	3	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
+- mpt-7b-chat (in GPT4All) 10  
 
 ### Question 8: Complete the following sentence by filling in the blank: "The capital city of France is _______."  
 Task Domain: Mask Filling  
@@ -110,6 +118,7 @@ Explanation: This task assesses the model's ability to understand context and ge
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	5	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
+- mpt-7b-chat (in GPT4All) 10  
 
 ### Question 9: Write a rhyming couplet about nature.  
 Task Domain: Poetry Generation  
@@ -122,6 +131,7 @@ Explanation: This task tests the model's ability to generate creative and cohere
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	6	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	5	  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	9	  
+- mpt-7b-chat (in GPT4All) 9
 
 ### Question 10: Based on the following statement, determine if the author's opinion is for or against nuclear energy: "Nuclear energy is a powerful source, but the potential risks and radioactive waste management issues make it a dangerous choice."  
 Task Domain: Opinion Detection  
@@ -133,6 +143,7 @@ Explanation: This task evaluates the model's ability to understand and identify 
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	9	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	6	  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
+- mpt-7b-chat (in GPT4All) 10
 
 ### Question 11: Rewrite the following sentence in passive voice: "The dog chased the cat."  
 Task Domain: Text Rewriting  
@@ -144,3 +155,4 @@ Explanation: This task tests the model's ability to manipulate and rewrite text 
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	5	  
 - koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
+- mpt-7b-chat (in GPT4All) 10
