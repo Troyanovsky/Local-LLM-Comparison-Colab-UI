@@ -185,12 +185,34 @@ Explanation: This task tests the model's ability to manipulate and rewrite text 
 - mpt-7b-instruct : 8  
 
 ### Question 12: Use the retrieved context to answer a question. Context does not contain the answer. (Prompt too long. See spreadsheet for original prompt)
-Task Domain: Document Question Answering
-Expected Good Response: "I don't know."
-Explanation: This task tests the model's ability to understand context and answer questions based on the information provided in the context.
+Task Domain: Document Question Answering  
+Expected Good Response: "I don't know."  
+Explanation: This task tests the model's ability to understand context and answer questions based on the information provided in the context.  
 
 
 ### Question 12: Use the retrieved context to answer a question. Context contains the answer. (Prompt too long. See spreadsheet for original prompt)
-Task Domain: Document Question Answering
-Expected Good Response: "["Semantic text search", "Generative question-answering", "Hybrid search", "Image similarity search", "Product recommendations"]"
-Explanation: This task tests the model's ability to understand context and answer questions based on the information provided in the context.
+Task Domain: Document Question Answering  
+Expected Good Response: "["Semantic text search", "Generative question-answering", "Hybrid search", "Image similarity search", "Product recommendations"]"  
+Explanation: This task tests the model's ability to understand context and answer questions based on the information provided in the context.  
+
+### Question 13: What is the square root of banana?
+Task Domain: Mathematical Reasoning  
+Expected Good Response: "The question is nonsensical, as square roots can only be calculated for numbers, not for objects or words like 'banana'."  
+Explanation: This task tests the model's ability to recognize questions that are illogical or nonsensical and respond accordingly.  
+
+### Question 14: Extract the sender's name and address from the following text: "Dear Troy, Thanks for sharing your thoughts on document qa with Claude LLM and your comments on Tim's thoughts. My address is 5000 Forbes Ave, Pittsburgh, PA 15213. Best, Alex." Respond in JSON with one field for name and the other field for address.
+Task Domain: Information Extraction  
+Expected Good Response: {"name": "Alex","address": "5000 Forbes Ave, Pittsburgh, PA 15213"}  
+Explanation: This task tests the model's ability to extract specific information (sender's name and address) from a given text and present the extracted information in a JSON format.  
+
+### Question 15: Given the following list of words. Categorize the words into 5 categories by similarity. Give each category a name. Respond in a python dictionary with key as the category name and value as a list of words in that category. List of words: ['Quagmire', 'Luminous', 'Melancholy', 'Perplexed', 'Jubilant', 'Enigmatic', 'Ambiguous', 'Ravenous', 'Obsolete', 'Tenacious', 'Euphoric', 'Wistful', 'Clandestine', 'Insidious', 'Inquisitive', 'Resilient', 'Surreptitious', 'Serendipity', 'Idiosyncratic', 'Juxtaposition']
+Task Domain: Categorization  
+Expected Good Response:  
+{
+  "Emotions": ['Melancholy', 'Jubilant', 'Euphoric', 'Wistful'],
+  "Qualities": ['Luminous', 'Tenacious', 'Resilient'],
+  "Mysterious": ['Quagmire', 'Enigmatic', 'Ambiguous', 'Clandestine', 'Surreptitious'],
+  "Inquisitive": ['Perplexed', 'Inquisitive'],
+  "Uncommon": ['Ravenous', 'Obsolete', 'Insidious', 'Serendipity', 'Idiosyncratic', 'Juxtaposition']
+}  
+Explanation: This task tests the model's ability to categorize a list of words into groups based on their similarity and provide appropriate category names. The response is in a Python dictionary format as specified in the question.  
