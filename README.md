@@ -18,142 +18,177 @@ llama.cpp: https://github.com/ggerganov/llama.cpp
 Original responses can be found at: https://docs.google.com/spreadsheets/d/1ogDXUiaBx3t7EpMo44aaA6U6kLXX0x2tGRgLg8CISGs/edit?usp=sharing
 
 Average Scores:  
-- wizardLM-7B.q4_2 (in GPT4All)	9.727272727  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	9.727272727  
-- mpt-7b-chat (in GPT4All)	9.090909091  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	8.909090909  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	8.727272727  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	6.090909091  
-- gpt4all-j-v1.3-groovy (in GPT4All)	6.909090909  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 9.81818181818182  
+- wizardLM-7B.q4_2 (in GPT4All) : 9.81818181818182  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 9  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 8.81818181818182  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 8.72727272727273  
+- mpt-7b-chat (in GPT4All) : 8.45454545454546  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 7.72727272727273  
+- mpt-7b-instruct : 7.09090909090909  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 6.63636363636364  
 
 ### Question 1: Translate the following English text into French: "The sun rises in the east and sets in the west."  
 Task Domain: Translation  
 Expected Good Response: "Le soleil se lève à l'est et se couche à l'ouest."  
 Explanation: This task tests the model's ability to understand and accurately translate text between languages.  
-- wizardLM-7B.q4_2 (in GPT4All)	10	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	1	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	9	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	1	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	8	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10  
-- mpt-7b-chat (in GPT4All) 5  
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 1  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 9  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 10  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 8  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 1  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 1  
+- mpt-7b-instruct : 1  
 
 ### Question 2: Summarize the following text: "The water cycle is a natural process that involves the continuous movement of water on, above, and below the Earth's surface. It includes various stages like evaporation, condensation, precipitation, and runoff. This cycle plays a crucial role in maintaining Earth's water balance and supporting life."  
 Task Domain: Summary  
 Expected Good Response: "The water cycle is the continuous movement of water on Earth, crucial for maintaining water balance and supporting life."  
 Explanation: This task evaluates the model's ability to extract the main points from a given text and generate a concise summary.  
-- wizardLM-7B.q4_2 (in GPT4All)	8	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	7	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	9	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	6	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	8	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	9	  
-- mpt-7b-chat (in GPT4All) 9  
+- wizardLM-7B.q4_2 (in GPT4All) : 9  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 4  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 10  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 8  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 9  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 10  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 5  
 
-### Question 3: I want you to act as a senior software developer with deep knowledge in system desing, frontend programming, and backend programming. Provide a high level design of a mental health journal app. Include the frontend and backend components. Do not write code.  
+### Question 3: I want you to act as a senior software developer with deep knowledge in system design, frontend programming, and backend programming. Provide a high level design of a mental health journal app. Include the frontend and backend components. Do not write code.  
 Task Domain: App Design  
 Explanation: This task evaluates the model's ability to closely follow user's instruction for a complex task.  
-- wizardLM-7B.q4_2 (in GPT4All)	9	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	9	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	9	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	9	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	9	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	9	  
-- mpt-7b-chat (in GPT4All) 9
+- wizardLM-7B.q4_2 (in GPT4All) : 9  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 9  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 9  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 9  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 9  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 9  
+- mpt-7b-chat (in GPT4All) : 9  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 7  
 
 ### Question 4: What are the main causes of the French Revolution according to this passage: "The French Revolution, which took place between 1789 and 1799, was rooted in financial crises, social inequality, and Enlightenment ideas."  
 Task Domain: Abstractive Question Answering  
 Expected Good Response: Financial crises, social inequality, and Enlightenment ideas.  
 Explanation: This task tests the model's ability to understand the context and generate an answer in its own words.  
-- wizardLM-7B.q4_2 (in GPT4All)	10	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	10	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	10	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	5	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
-- mpt-7b-chat (in GPT4All) 10  
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 10  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 10  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 5  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 10  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 10  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 6  
 
 ### Question 5: In the following text, identify the two artists mentioned: "During the Renaissance, Leonardo da Vinci and Michelangelo were two of the most influential artists who created masterpieces that continue to inspire people today."  
 Task Domain: Extractive Question Answering  
 Expected Good Response: Leonardo da Vinci, Michelangelo  
 Explanation: This task assesses the model's ability to extract specific information from a given text.  
-- wizardLM-7B.q4_2 (in GPT4All)	10	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	7	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	10	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	8	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
-- mpt-7b-chat (in GPT4All) 10  
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 7  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 10  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 8  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 10  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 6  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 9  
 
 ### Question 6: Determine the sentiment of this customer review: "I had a fantastic experience at this restaurant. The food was delicious, and the service was outstanding."  
 Task Domain: Sentiment Analysis  
 Expected Good Response: Positive  
 Explanation: This task evaluates the model's ability to analyze text and identify the sentiment expressed.  
-- wizardLM-7B.q4_2 (in GPT4All)	10	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	10	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	10	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	10	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
-- mpt-7b-chat (in GPT4All) 10
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 10  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 10  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 10  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 10  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 10  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 10  
 
 ### Question 7: Classify the following text into one of these categories: Sports, Technology, Health, or Politics: "Apple recently unveiled its latest iPhone, featuring a faster processor and improved battery life."  
 Task Domain: Zero-shot Classification  
 Expected Good Response: Technology  
 Explanation: This task tests the model's ability to classify text into predefined categories without any prior training on the specific categories.  
-- wizardLM-7B.q4_2 (in GPT4All)	10	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	9	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	1	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	3	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
-- mpt-7b-chat (in GPT4All) 10  
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 9  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 1  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 10  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 10  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 10  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 10  
 
 ### Question 8: Complete the following sentence by filling in the blank: "The capital city of France is _______."  
 Task Domain: Mask Filling  
 Expected Good Response: Paris  
 Explanation: This task assesses the model's ability to understand context and generate appropriate words to fill in missing information.  
-- wizardLM-7B.q4_2 (in GPT4All)	10	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	10	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	10	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	5	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
-- mpt-7b-chat (in GPT4All) 10  
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 10  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 10  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 5  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 10  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 10  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 10  
 
 ### Question 9: Write a rhyming couplet about nature.  
 Task Domain: Poetry Generation  
 Expected Good Response: "In nature's beauty, we find respite and grace,
 A symphony of colors that time cannot erase."  
 Explanation: This task tests the model's ability to generate creative and coherent text that adheres to specific constraints, such as rhyme and theme.  
-- wizardLM-7B.q4_2 (in GPT4All)	10	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	8	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	10	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	6	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	5	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	9	  
-- mpt-7b-chat (in GPT4All) 9
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 8  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 10  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 6  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 5  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 9  
+- mpt-7b-chat (in GPT4All) : 9  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 5  
+- mpt-7b-instruct : 4  
 
 ### Question 10: Based on the following statement, determine if the author's opinion is for or against nuclear energy: "Nuclear energy is a powerful source, but the potential risks and radioactive waste management issues make it a dangerous choice."  
 Task Domain: Opinion Detection  
 Expected Good Response: Against  
 Explanation: This task evaluates the model's ability to understand and identify the author's stance or opinion on a specific topic.  
-- wizardLM-7B.q4_2 (in GPT4All)	10	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	4	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	10	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	9	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	6	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
-- mpt-7b-chat (in GPT4All) 10
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 4  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 10  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 9  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 6  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 8  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 8  
 
 ### Question 11: Rewrite the following sentence in passive voice: "The dog chased the cat."  
 Task Domain: Text Rewriting  
 Expected Good Response: "The cat was chased by the dog."  
 Explanation: This task tests the model's ability to manipulate and rewrite text according to specific grammatical requirements.  
-- wizardLM-7B.q4_2 (in GPT4All)	10	  
-- gpt4all-j-v1.3-groovy (in GPT4All)	1	  
-- vicuna-13b-1.1-q4_1 (in GPT4All)	10	  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)	5	  
-- koala-13B-4bit-128g.GGML (using llama.cpp)	10	  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)	10	  
-- mpt-7b-chat (in GPT4All) 10
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 1  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 10  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 5  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 10  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 10  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 8  
+
+### Question 12: Use the retrieved context to answer a question. Context does not contain the answer. (Prompt too long. See spreadsheet for original prompt)
+Task Domain: Document Question Answering
+Expected Good Response: "I don't know."
+Explanation: This task tests the model's ability to understand context and answer questions based on the information provided in the context.
+
+
+### Question 12: Use the retrieved context to answer a question. Context contains the answer. (Prompt too long. See spreadsheet for original prompt)
+Task Domain: Document Question Answering
+Expected Good Response: "["Semantic text search", "Generative question-answering", "Hybrid search", "Image similarity search", "Product recommendations"]"
+Explanation: This task tests the model's ability to understand context and answer questions based on the information provided in the context.
