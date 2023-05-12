@@ -13,7 +13,7 @@ These models work better among the models I tested on my hardware (i5-12490F, 32
 - stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui): https://huggingface.co/TheBloke/stable-vicuna-13B-GPTQ
 
 GPT4ALl: https://github.com/nomic-ai/gpt4all-chat  
-llama.cpp: https://github.com/ggerganov/llama.cpp
+llama.cpp: https://github.com/ggerganov/llama.cpp  
 oobabooga text geenration webui: https://github.com/oobabooga/text-generation-webui
 
 ## Questions and scores
