@@ -20,15 +20,15 @@ oobabooga text geenration webui: https://github.com/oobabooga/text-generation-we
 Original responses can be found at: https://docs.google.com/spreadsheets/d/1ogDXUiaBx3t7EpMo44aaA6U6kLXX0x2tGRgLg8CISGs/edit?usp=sharing
 
 Average Scores:  
-- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 9.81818181818182  
-- wizardLM-7B.q4_2 (in GPT4All) : 9.81818181818182  
-- vicuna-13b-1.1-q4_1 (in GPT4All) : 9  
-- koala-13B-4bit-128g.GGML (using llama.cpp) : 8.81818181818182  
-- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 8.72727272727273  
-- mpt-7b-chat (in GPT4All) : 8.45454545454546  
-- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 7.72727272727273  
-- mpt-7b-instruct : 7.09090909090909  
-- gpt4all-j-v1.3-groovy (in GPT4All) : 6.63636363636364  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 9.31  
+- wizardLM-7B.q4_2 (in GPT4All) : 9.31  
+- mpt-7b-chat (in GPT4All) : 8.25  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 7.94  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 7.88  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 7.81  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 6.56  
+- mpt-7b-instruct : 6.38  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 5.56  
 
 ### Question 1: Translate the following English text into French: "The sun rises in the east and sets in the west."  
 Task Domain: Translation  
@@ -188,22 +188,57 @@ Explanation: This task tests the model's ability to manipulate and rewrite text 
 Task Domain: Document Question Answering  
 Expected Good Response: "I don't know."  
 Explanation: This task tests the model's ability to understand context and answer questions based on the information provided in the context.  
-
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 1  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 1  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 1  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 10  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 10  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 1  
 
 ### Question 13: Use the retrieved context to answer a question. Context contains the answer. (Prompt too long. See spreadsheet for original prompt)
 Task Domain: Document Question Answering  
 Expected Good Response: "["Semantic text search", "Generative question-answering", "Hybrid search", "Image similarity search", "Product recommendations"]"  
 Explanation: This task tests the model's ability to understand context and answer questions based on the information provided in the context.  
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 1  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 3  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 5  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 7  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 7  
+- mpt-7b-chat (in GPT4All) : 8  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 3  
+- mpt-7b-instruct : 10  
 
 ### Question 14: What is the square root of banana?
 Task Domain: Mathematical Reasoning  
 Expected Good Response: "The question is nonsensical, as square roots can only be calculated for numbers, not for objects or words like 'banana'."  
 Explanation: This task tests the model's ability to recognize questions that are illogical or nonsensical and respond accordingly.  
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 3  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 10  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 1  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 1  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 8  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 2  
+- mpt-7b-instruct : 1  
 
 ### Question 15: Extract the sender's name and address from the following text: "Dear Troy, Thanks for sharing your thoughts on document qa with Claude LLM and your comments on Tim's thoughts. My address is 5000 Forbes Ave, Pittsburgh, PA 15213. Best, Alex." Respond in JSON with one field for name and the other field for address.
 Task Domain: Information Extraction  
 Expected Good Response: {"name": "Alex","address": "5000 Forbes Ave, Pittsburgh, PA 15213"}  
 Explanation: This task tests the model's ability to extract specific information (sender's name and address) from a given text and present the extracted information in a JSON format.  
+- wizardLM-7B.q4_2 (in GPT4All) : 10  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 10  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 10  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 10  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 10  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 10  
+- mpt-7b-chat (in GPT4All) : 10  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 10  
+- mpt-7b-instruct : 5  
 
 ### Question 16: Given the following list of words. Categorize the words into 5 categories by similarity. Give each category a name. Respond in a python dictionary with key as the category name and value as a list of words in that category. List of words: ['Quagmire', 'Luminous', 'Melancholy', 'Perplexed', 'Jubilant', 'Enigmatic', 'Ambiguous', 'Ravenous', 'Obsolete', 'Tenacious', 'Euphoric', 'Wistful', 'Clandestine', 'Insidious', 'Inquisitive', 'Resilient', 'Surreptitious', 'Serendipity', 'Idiosyncratic', 'Juxtaposition']
 Task Domain: Categorization  
@@ -216,3 +251,12 @@ Expected Good Response:
   "Uncommon": ['Ravenous', 'Obsolete', 'Insidious', 'Serendipity', 'Idiosyncratic', 'Juxtaposition']
 }  
 Explanation: This task tests the model's ability to categorize a list of words into groups based on their similarity and provide appropriate category names. The response is in a Python dictionary format as specified in the question.  
+- wizardLM-7B.q4_2 (in GPT4All) : 1  
+- gpt4all-j-v1.3-groovy (in GPT4All) : 1  
+- vicuna-13b-1.1-q4_1 (in GPT4All) : 4  
+- gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp) : 3  
+- koala-13B-4bit-128g.GGML (using llama.cpp) : 1  
+- wizard-vicuna-13B.ggml.q4_0 (using llama.cpp) : 4  
+- mpt-7b-chat (in GPT4All) : 3  
+- stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : 4  
+- mpt-7b-instruct : 7  
