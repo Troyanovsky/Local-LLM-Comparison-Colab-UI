@@ -6,13 +6,13 @@ These models work better among the models I tested on my hardware (i5-12490F, 32
 - wizardLM-7B.q4_2 (in GPT4ALL)
 - gpt4all-j-v1.3-groovy (in GPT4All)
 - vicuna-13b-1.1-q4_1 (in GPT4All)
-- mpt-7b-chat (in GPT4All): https://huggingface.co/mosaicml/mpt-7b-chat
+- (added 2023/05/11) mpt-7b-chat (in GPT4All): https://huggingface.co/mosaicml/mpt-7b-chat
 - gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp): https://huggingface.co/Bradarr/gpt4-x-alpaca-13b-native-ggml-model-q4_0
 - koala-13B-4bit-128g.GGML (using llama.cpp): https://huggingface.co/TheBloke/koala-13B-GPTQ-4bit-128g-GGML
 - wizard-vicuna-13B.ggml.q4_0 (using llama.cpp): https://huggingface.co/TheBloke/wizard-vicuna-13B-GGML
 - stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui): https://huggingface.co/TheBloke/stable-vicuna-13B-GPTQ
-- wizard-lm-uncensored-13b-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : https://huggingface.co/4bit/WizardLM-13B-Uncensored-4bit-128g
-- Manticore-13B-GPTQ (using oobabooga/text-generation-webui): https://huggingface.co/TheBloke/Manticore-13B-GPTQ (added 2023/05/23)
+- (added 2023/05/19) wizard-lm-uncensored-13b-GPTQ-4bit-128g (using oobabooga/text-generation-webui) : https://huggingface.co/4bit/WizardLM-13B-Uncensored-4bit-128g
+- (added 2023/05/23) Manticore-13B-GPTQ (using oobabooga/text-generation-webui): https://huggingface.co/TheBloke/Manticore-13B-GPTQ 
 
 GPT4ALl: https://github.com/nomic-ai/gpt4all-chat  
 llama.cpp: https://github.com/ggerganov/llama.cpp  
