@@ -9,6 +9,7 @@ These models work better among the models I tested on my hardware (i5-12490F, 32
 
 | Model                                                                           | Avg_Score | Colab_Link                                                                                                                                                                                                                                                | Date_Added | Link                                                                    |
 | :------------------------------------------------------------------------------ | :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :---------------------------------------------------------------------- |
+| wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui)                   | 9.63      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizardLM_13B_1_0_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                   | 2023/05/29 | https://huggingface.co/TheBloke/wizardLM-13B-1.0-GPTQ                  |
 | wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)                                   | 9.31      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizard_vicuna_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                  | 2023/05/07 | https://huggingface.co/TheBloke/wizard-vicuna-13B-GGML                  |
 | wizardLM-7B.q4_2 (in GPT4All)                                                   | 9.31      | No                                                                                                                                                                                                                                                        | 2023/05/07 | https://gpt4all.io/models/ggml-wizardLM-7B.q4_2.bin                     |
 | Airoboros-13B-GPTQ-4bit                                                         | 8.75      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/airoboros_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                      | 2023/05/25 | https://huggingface.co/TheBloke/airoboros-13B-GPTQ                      |
@@ -20,7 +21,7 @@ These models work better among the models I tested on my hardware (i5-12490F, 32
 | koala-13B-4bit-128g.GGML (using llama.cpp)                                      | 7.88      | No                                                                                                                                                                                                                                                        | 2023/05/07 | https://huggingface.co/TheBloke/koala-13B-GPTQ-4bit-128g-GGML           |
 | Manticore-13B-GPTQ (using oobabooga/text-generation-webui)                      | 7.81      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Manticore_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                      | 2023/05/23 | https://huggingface.co/TheBloke/Manticore-13B-GPTQ                      |
 | stable-vicuna-13B-GPTQ-4bit-128g (using oobabooga/text-generation-webui)        | 7.81      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/stable_vicuna_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                  | 2023/05/12 | https://huggingface.co/TheBloke/stable-vicuna-13B-GPTQ                  |
-| guanaco-13B-GPTQ (using oobabooga/text-generation-webui)                        | 7.63      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/guanaco_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                        | 2023/05/26 | https://huggingface.co/TheBloke/guanaco-13B-GPTQ                  |
+| guanaco-13B-GPTQ (using oobabooga/text-generation-webui)                        | 7.63      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/guanaco_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                        | 2023/05/26 | https://huggingface.co/TheBloke/guanaco-13B-GPTQ                        |
 | gpt4-x-alpaca-13b-ggml-q4_0 (using llama.cpp)                                   | 6.5625    | No                                                                                                                                                                                                                                                        | 2023/05/07 | https://huggingface.co/Bradarr/gpt4-x-alpaca-13b-native-ggml-model-q4_0 |
 | mpt-7b-instruct                                                                 | 6.375     | No                                                                                                                                                                                                                                                        | 2023/05/12 | https://huggingface.co/TheBloke/MPT-7B-Instruct-GGML                    |
 | gpt4all-j-v1.3-groovy (in GPT4All)                                              | 5.5625    | No                                                                                                                                                                                                                                                        | 2023/05/07 | https://gpt4all.io/models/ggml-gpt4all-j-v1.3-groovy.bin                |
@@ -55,6 +56,7 @@ Explanation: This task tests the model's ability to understand and accurately tr
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 8  
 - Airoboros-13B-GPTQ-4bit : 10  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 4  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 9  
 
 ### Question 2: Summarize the following text: "The water cycle is a natural process that involves the continuous movement of water on, above, and below the Earth's surface. It includes various stages like evaporation, condensation, precipitation, and runoff. This cycle plays a crucial role in maintaining Earth's water balance and supporting life."  
 Task Domain: Summary  
@@ -75,6 +77,7 @@ Explanation: This task evaluates the model's ability to extract the main points 
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
 - Airoboros-13B-GPTQ-4bit : 7  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 9  
 
 ### Question 3: I want you to act as a senior software developer with deep knowledge in system design, frontend programming, and backend programming. Provide a high level design of a mental health journal app. Include the frontend and backend components. Do not write code.  
 Task Domain: App Design  
@@ -94,6 +97,7 @@ Explanation: This task evaluates the model's ability to closely follow user's in
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
 - Airoboros-13B-GPTQ-4bit : 9  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 4: What are the main causes of the French Revolution according to this passage: "The French Revolution, which took place between 1789 and 1799, was rooted in financial crises, social inequality, and Enlightenment ideas."  
 Task Domain: Abstractive Question Answering  
@@ -114,6 +118,7 @@ Explanation: This task tests the model's ability to understand the context and g
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - Airoboros-13B-GPTQ-4bit : 9  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 5: In the following text, identify the two artists mentioned: "During the Renaissance, Leonardo da Vinci and Michelangelo were two of the most influential artists who created masterpieces that continue to inspire people today."  
 Task Domain: Extractive Question Answering  
@@ -134,6 +139,7 @@ Explanation: This task assesses the model's ability to extract specific informat
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - Airoboros-13B-GPTQ-4bit : 10  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 6: Determine the sentiment of this customer review: "I had a fantastic experience at this restaurant. The food was delicious, and the service was outstanding."  
 Task Domain: Sentiment Analysis  
@@ -154,6 +160,7 @@ Explanation: This task evaluates the model's ability to analyze text and identif
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - Airoboros-13B-GPTQ-4bit : 10  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 7: Classify the following text into one of these categories: Sports, Technology, Health, or Politics: "Apple recently unveiled its latest iPhone, featuring a faster processor and improved battery life."  
 Task Domain: Zero-shot Classification  
@@ -174,6 +181,7 @@ Explanation: This task tests the model's ability to classify text into predefine
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - Airoboros-13B-GPTQ-4bit : 10  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 8: Complete the following sentence by filling in the blank: "The capital city of France is _______."  
 Task Domain: Mask Filling  
@@ -194,6 +202,7 @@ Explanation: This task assesses the model's ability to understand context and ge
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - Airoboros-13B-GPTQ-4bit : 10  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 9: Write a rhyming couplet about nature.  
 Task Domain: Poetry Generation  
@@ -215,6 +224,7 @@ Explanation: This task tests the model's ability to generate creative and cohere
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
 - Airoboros-13B-GPTQ-4bit : 10  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 6  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 10: Based on the following statement, determine if the author's opinion is for or against nuclear energy: "Nuclear energy is a powerful source, but the potential risks and radioactive waste management issues make it a dangerous choice."  
 Task Domain: Opinion Detection  
@@ -235,6 +245,7 @@ Explanation: This task evaluates the model's ability to understand and identify 
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 8  
 - Airoboros-13B-GPTQ-4bit : 10  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 11: Rewrite the following sentence in passive voice: "The dog chased the cat."  
 Task Domain: Text Rewriting  
@@ -255,6 +266,7 @@ Explanation: This task tests the model's ability to manipulate and rewrite text 
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - Airoboros-13B-GPTQ-4bit : 10  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 12: Use the retrieved context to answer a question. Context does not contain the answer. (Prompt too long. See spreadsheet for original prompt)
 Task Domain: Document Question Answering  
@@ -275,6 +287,7 @@ Explanation: This task tests the model's ability to understand context and answe
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 5  
 - Airoboros-13B-GPTQ-4bit : 10  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 1  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 13: Use the retrieved context to answer a question. Context contains the answer. (Prompt too long. See spreadsheet for original prompt)
 Task Domain: Document Question Answering  
@@ -295,6 +308,7 @@ Explanation: This task tests the model's ability to understand context and answe
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 3  
 - Airoboros-13B-GPTQ-4bit : 8  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 9  
 
 ### Question 14: What is the square root of banana?
 Task Domain: Mathematical Reasoning  
@@ -315,6 +329,7 @@ Explanation: This task tests the model's ability to recognize questions that are
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 5  
 - Airoboros-13B-GPTQ-4bit : 10  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 1  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 15: Extract the sender's name and address from the following text: "Dear Troy, Thanks for sharing your thoughts on document qa with Claude LLM and your comments on Tim's thoughts. My address is 5000 Forbes Ave, Pittsburgh, PA 15213. Best, Alex." Respond in JSON with one field for name and the other field for address.
 Task Domain: Information Extraction  
@@ -335,6 +350,7 @@ Explanation: This task tests the model's ability to extract specific information
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - Airoboros-13B-GPTQ-4bit : 1  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 16: Given the following list of words. Categorize the words into 5 categories by similarity. Give each category a name. Respond in a python dictionary with key as the category name and value as a list of words in that category. List of words: ['Quagmire', 'Luminous', 'Melancholy', 'Perplexed', 'Jubilant', 'Enigmatic', 'Ambiguous', 'Ravenous', 'Obsolete', 'Tenacious', 'Euphoric', 'Wistful', 'Clandestine', 'Insidious', 'Inquisitive', 'Resilient', 'Surreptitious', 'Serendipity', 'Idiosyncratic', 'Juxtaposition']
 Task Domain: Categorization  
@@ -362,3 +378,4 @@ Explanation: This task tests the model's ability to categorize a list of words i
 - Project-Baize-v2-13B-GPTQ (using oobabooga/text-generation-webui) : 4  
 - Airoboros-13B-GPTQ-4bit : 6  
 - guanaco-13B-GPTQ (using oobabooga/text-generation-webui) : 5  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 7  
