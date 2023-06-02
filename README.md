@@ -4,7 +4,7 @@ Compare the performance of different LLM that can be deployed locally on consume
 For your convenience, I have made the colab notebooks with oobabooga's text generation webui for trying out the models (I'm creating GPTQ colab notebooks as llama.cpp has made some breaking changes). You can find the links in the table below. For models supported by GPT4ALL, you can simply use their one-click installer and download the models there.
 
 ## Models tested & average score:
-These models work better among the models I tested on my hardware (i5-12490F, 32GB RAM):
+These models work better among the models I tested on my hardware (i5-12490F, 32GB RAM, RTX 3060 Ti GDDR6X 8GB VRAM):
 (Note: Because llama.cpp has made some breaking changes to the support of older ggml models. Some older ggml versions listed below may not work properly on current llama.cpp. But there should be GPTQ equivalents or newer ggml versions for the models.)
 
 | Model                                                                           | Avg_Score | Colab_Link                                                                                                                                                                                                                                                | Date_Added | Link                                                                    |
