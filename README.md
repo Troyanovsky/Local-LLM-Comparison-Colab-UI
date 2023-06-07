@@ -11,6 +11,7 @@ These models work better among the models I tested on my hardware (i5-12490F, 32
 | :------------------------------------------------------------------------------ | :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :---------------------------------------------------------------------- |
 | wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui)                   | 9.63      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizardLM_13B_1_0_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                   | 2023/05/29 | https://huggingface.co/TheBloke/wizardLM-13B-1.0-GPTQ                   |
 | Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui)                    | 9.56      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Nous_Hermes_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                    | 2023/06/03 | https://huggingface.co/TheBloke/Nous-Hermes-13B-GPTQ/                   |
+| Selfee-13B-GPTQ (using oobabooga/text-generation-webui)                         | 9.31      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Selfee_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                         | 2023/06/07 | https://huggingface.co/TheBloke/Selfee-13B-GPTQ                   |
 | wizard-vicuna-13B.ggml.q4_0 (using llama.cpp)                                   | 9.31      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizard_vicuna_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                  | 2023/05/07 | https://huggingface.co/TheBloke/wizard-vicuna-13B-GGML                  |
 | wizardLM-7B.q4_2 (in GPT4All)                                                   | 9.31      | No                                                                                                                                                                                                                                                        | 2023/05/07 | https://gpt4all.io/models/ggml-wizardLM-7B.q4_2.bin                     |
 | 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui)                    | 9.00      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/13B_HyperMantis_GPTQ_4bit_128g.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>          | 2023/06/03 | https://huggingface.co/digitous/13B-HyperMantis_GPTQ_4bit-128g/         |
@@ -65,6 +66,7 @@ Explanation: This task tests the model's ability to understand and accurately tr
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 9  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 6  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 2: Summarize the following text: "The water cycle is a natural process that involves the continuous movement of water on, above, and below the Earth's surface. It includes various stages like evaporation, condensation, precipitation, and runoff. This cycle plays a crucial role in maintaining Earth's water balance and supporting life."  
 Task Domain: Summary  
@@ -90,6 +92,7 @@ Explanation: This task evaluates the model's ability to extract the main points 
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 8  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 9  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
 
 ### Question 3: I want you to act as a senior software developer with deep knowledge in system design, frontend programming, and backend programming. Provide a high level design of a mental health journal app. Include the frontend and backend components. Do not write code.  
 Task Domain: App Design  
@@ -114,6 +117,7 @@ Explanation: This task evaluates the model's ability to closely follow user's in
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 9  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 9  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
 
 ### Question 4: What are the main causes of the French Revolution according to this passage: "The French Revolution, which took place between 1789 and 1799, was rooted in financial crises, social inequality, and Enlightenment ideas."  
 Task Domain: Abstractive Question Answering  
@@ -139,6 +143,7 @@ Explanation: This task tests the model's ability to understand the context and g
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 10  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 10  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 5: In the following text, identify the two artists mentioned: "During the Renaissance, Leonardo da Vinci and Michelangelo were two of the most influential artists who created masterpieces that continue to inspire people today."  
 Task Domain: Extractive Question Answering  
@@ -164,6 +169,7 @@ Explanation: This task assesses the model's ability to extract specific informat
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 10  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 10  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 6: Determine the sentiment of this customer review: "I had a fantastic experience at this restaurant. The food was delicious, and the service was outstanding."  
 Task Domain: Sentiment Analysis  
@@ -189,6 +195,7 @@ Explanation: This task evaluates the model's ability to analyze text and identif
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 10  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 10  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 7: Classify the following text into one of these categories: Sports, Technology, Health, or Politics: "Apple recently unveiled its latest iPhone, featuring a faster processor and improved battery life."  
 Task Domain: Zero-shot Classification  
@@ -214,6 +221,7 @@ Explanation: This task tests the model's ability to classify text into predefine
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 10  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 10  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 8: Complete the following sentence by filling in the blank: "The capital city of France is _______."  
 Task Domain: Mask Filling  
@@ -239,6 +247,7 @@ Explanation: This task assesses the model's ability to understand context and ge
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 10  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 10  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 9: Write a rhyming couplet about nature.  
 Task Domain: Poetry Generation  
@@ -265,6 +274,7 @@ Explanation: This task tests the model's ability to generate creative and cohere
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 7  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 10  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 7  
 
 ### Question 10: Based on the following statement, determine if the author's opinion is for or against nuclear energy: "Nuclear energy is a powerful source, but the potential risks and radioactive waste management issues make it a dangerous choice."  
 Task Domain: Opinion Detection  
@@ -290,6 +300,7 @@ Explanation: This task evaluates the model's ability to understand and identify 
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 10  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 10  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 11: Rewrite the following sentence in passive voice: "The dog chased the cat."  
 Task Domain: Text Rewriting  
@@ -315,6 +326,7 @@ Explanation: This task tests the model's ability to manipulate and rewrite text 
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 10  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 10  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 12: Use the retrieved context to answer a question. Context does not contain the answer. (Prompt too long. See spreadsheet for original prompt)
 Task Domain: Document Question Answering  
@@ -340,6 +352,7 @@ Explanation: This task tests the model's ability to understand context and answe
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 1  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 10  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 13: Use the retrieved context to answer a question. Context contains the answer. (Prompt too long. See spreadsheet for original prompt)
 Task Domain: Document Question Answering  
@@ -365,6 +378,7 @@ Explanation: This task tests the model's ability to understand context and answe
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 8  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 9  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 10  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 14: What is the square root of banana?
 Task Domain: Mathematical Reasoning  
@@ -390,6 +404,7 @@ Explanation: This task tests the model's ability to recognize questions that are
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 8  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 8  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 15: Extract the sender's name and address from the following text: "Dear Troy, Thanks for sharing your thoughts on document qa with Claude LLM and your comments on Tim's thoughts. My address is 5000 Forbes Ave, Pittsburgh, PA 15213. Best, Alex." Respond in JSON with one field for name and the other field for address.
 Task Domain: Information Extraction  
@@ -415,6 +430,7 @@ Explanation: This task tests the model's ability to extract specific information
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 10  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 9  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 16: Given the following list of words. Categorize the words into 5 categories by similarity. Give each category a name. Respond in a python dictionary with key as the category name and value as a list of words in that category. List of words: ['Quagmire', 'Luminous', 'Melancholy', 'Perplexed', 'Jubilant', 'Enigmatic', 'Ambiguous', 'Ravenous', 'Obsolete', 'Tenacious', 'Euphoric', 'Wistful', 'Clandestine', 'Insidious', 'Inquisitive', 'Resilient', 'Surreptitious', 'Serendipity', 'Idiosyncratic', 'Juxtaposition']
 Task Domain: Categorization  
@@ -447,3 +463,4 @@ Explanation: This task tests the model's ability to categorize a list of words i
 - WizardLM-Uncensored-Falcon-7B-GPTQ   (using oobabooga/text-generation-webui) : 3  
 - Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui) : 7  
 - 13B-HyperMantis_GPTQ (using oobabooga/text-generation-webui) : 3  
+- Selfee-13B-GPTQ (using oobabooga/text-generation-webui) : 4  
