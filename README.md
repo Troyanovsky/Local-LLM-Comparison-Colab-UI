@@ -58,7 +58,13 @@ Many thanks to:
 
 ## Coding models tested & average scores:
 
-TODO: Redmond-Hermes-Coder-GPTQ, WizardCoder-15B-1.0-GPTQ, starcoderplus-GPTQ, starcoder-GPTQ, wizard-vicuna-13B.ggml, wizardLM-13B-1.0-GPTQ 
+TODO: starcoderplus-GPTQ, starcoder-GPTQ, wizardLM-13B-1.0-GPTQ 
+
+| Model_Name                                                        | Avg_Scores | Colab_Link                                                                                                                                                                                                                                  | Date_Added | Link                                                      |
+| :---------------------------------------------------------------- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------- | :-------------------------------------------------------- |
+| Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) | 8.4        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Redmond_Hermes_Coder_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | 2023/07/03 | https://huggingface.co/TheBloke/Redmond-Hermes-Coder-GPTQ |
+| wizard-vicuna-13B-GPTQ (using oobabooga/text-generation-webui)    | 7.3        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizard_vicuna_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>    | 2023/07/03 | https://huggingface.co/TheBloke/wizard-vicuna-13B-GPTQ    |
+| WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui)  | 5.9        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/WizardCoder_15B_1_0_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>  | 2023/07/03 | https://huggingface.co/TheBloke/WizardCoder-15B-1.0-GPTQ  |
 
 ## Questions and scores
 Original responses can be found at: https://docs.google.com/spreadsheets/d/1ogDXUiaBx3t7EpMo44aaA6U6kLXX0x2tGRgLg8CISGs/edit?usp=sharing
@@ -699,6 +705,9 @@ def find_pairs_with_sum(arr, target):
     return pairs
 ```
 Explanation of the task: This problem tests the candidate's proficiency in Python and their ability to apply efficient algorithms for a common task in software engineering.  
+- wizard-vicuna-13B-GPTQ (using oobabooga/text-generation-webui) : 10  
+- WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui) : 5.5  
+- Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 2: Implement a computer vision model in PyTorch that can classify images of handwritten digits using the MNIST dataset.
 Task Domain: Computer Vision  
@@ -733,7 +742,10 @@ for epoch in range(10):
         loss.backward()
         optimizer.step()
 ```
-Explanation of the task: This problem tests the candidate's understanding of computer vision, deep learning, and the PyTorch framework, reflecting their ability to create and train models for real-world applications.
+Explanation of the task: This problem tests the candidate's understanding of computer vision, deep learning, and the PyTorch framework, reflecting their ability to create and train models for real-world applications.  
+- wizard-vicuna-13B-GPTQ (using oobabooga/text-generation-webui) : 6.5  
+- WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui) : 7.5  
+- Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) : 9.5  
 
 ### Question 3: Develop a sentiment analysis model using natural language processing (NLP) techniques in Python with the help of the NLTK library.
 Task Domain: Natural Language Processing
@@ -749,7 +761,10 @@ def analyze_sentiment(text):
     sentiment_score = sia.polarity_scores(text)
     return sentiment_score
 ```
-Explanation of the task: This problem tests the candidate's proficiency in NLP and their ability to apply it to sentiment analysis, a popular subfield with a wide range of applications in social media analysis, chatbots, and more.
+Explanation of the task: This problem tests the candidate's proficiency in NLP and their ability to apply it to sentiment analysis, a popular subfield with a wide range of applications in social media analysis, chatbots, and more.  
+- wizard-vicuna-13B-GPTQ (using oobabooga/text-generation-webui) : 7.5  
+- WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui) : 9.5  
+- Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) : 7.5  
 
 ### Question 4: Implement a SwiftUI view that displays a list of items and allows the user to filter the list by a search query.
 Task Domain: iOS Development
@@ -780,7 +795,10 @@ struct FilteredListView: View {
     }
 }
 ```
-Explanation of the task: This problem tests the candidate's proficiency in SwiftUI, a modern framework for building user interfaces on Apple platforms, and their ability to create a responsive and dynamic UI.
+Explanation of the task: This problem tests the candidate's proficiency in SwiftUI, a modern framework for building user interfaces on Apple platforms, and their ability to create a responsive and dynamic UI.  
+- wizard-vicuna-13B-GPTQ (using oobabooga/text-generation-webui) : 4  
+- WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui) : 3  
+- Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) : 5.5  
 
 ### Question 5: Design a RESTful API in Flask (Python) that allows users to create, read, update, and delete (CRUD) notes.
 Task Domain: Web Development
@@ -842,4 +860,7 @@ def delete_note(id):
 if __name__ == '__main__':
     app.run()
 ```
-Explanation of the task: This problem tests the candidate's ability to design and implement a RESTful API using Flask, a popular web framework in Python, and assesses their understanding of CRUD operations and database management.
+Explanation of the task: This problem tests the candidate's ability to design and implement a RESTful API using Flask, a popular web framework in Python, and assesses their understanding of CRUD operations and database management.  
+- wizard-vicuna-13B-GPTQ (using oobabooga/text-generation-webui) : 8.5  
+- WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui) : 4  
+- Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) : 9.5  
