@@ -56,6 +56,10 @@ Many thanks to:
 ❤️ Colab webui inspired by camenduru: https://github.com/camenduru/text-generation-webui-colab/tree/main  
 ❤️ The Bloke for quantization of the models: https://huggingface.co/TheBloke  
 
+## Coding models tested & average scores:
+
+TODO: Redmond-Hermes-Coder-GPTQ, WizardCoder-15B-1.0-GPTQ, starcoderplus-GPTQ, starcoder-GPTQ, wizard-vicuna-13B.ggml, wizardLM-13B-1.0-GPTQ 
+
 ## Questions and scores
 Original responses can be found at: https://docs.google.com/spreadsheets/d/1ogDXUiaBx3t7EpMo44aaA6U6kLXX0x2tGRgLg8CISGs/edit?usp=sharing
 
@@ -673,3 +677,169 @@ Explanation: This task tests the model's ability to categorize a list of words i
 - vicuna-7B-v1.3-GPTQ (using oobabooga/text-generation-webui) : 4  
 - UltraLM-13B-GPTQ (using oobabooga/text-generation-webui) : 5  
 - airoboros-13B-gpt4-1.4-GPTQ (using oobabooga/text-generation-webui) : 5  
+
+## Coding questions and answers
+
+I decided to test the coding capability of some coding-specific models and top general purpose models. Original responses can be found at: https://docs.google.com/spreadsheets/d/1ogDXUiaBx3t7EpMo44aaA6U6kLXX0x2tGRgLg8CISGs/edit?usp=sharing
+
+### Question 1: Implement a Python function that takes in a list of integers and an integer target, and returns a list of pairs whose sum is equal to the target.
+Task Domain: Coding  
+Expected Good Response:  
+```
+def find_pairs_with_sum(arr, target):
+    if not arr:
+        return []
+    pairs = []
+    seen = set()
+    for num in arr:
+        complement = target - num
+        if complement in seen:
+            pairs.append((num, complement))
+        seen.add(num)
+    return pairs
+```
+Explanation of the task: This problem tests the candidate's proficiency in Python and their ability to apply efficient algorithms for a common task in software engineering.  
+
+### Question 2: Implement a computer vision model in PyTorch that can classify images of handwritten digits using the MNIST dataset.
+Task Domain: Computer Vision  
+Expected Good Response:  
+```
+import torch
+import torchvision
+import torchvision.transforms as transforms
+
+transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
+trainset = torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=transform)
+trainloader = torch.utils.data.DataLoader(trainset, batch_size=100, shuffle=True, num_workers=2)
+
+model = torch.nn.Sequential(
+    torch.nn.Linear(28*28, 128),
+    torch.nn.ReLU(),
+    torch.nn.Linear(128, 64),
+    torch.nn.ReLU(),
+    torch.nn.Linear(64, 10)
+)
+
+criterion = torch.nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
+
+for epoch in range(10):
+    for i, data in enumerate(trainloader, 0):
+        inputs, labels = data
+        inputs = inputs.view(inputs.size(0), -1)
+        optimizer.zero_grad()
+        outputs = model(inputs)
+        loss = criterion(outputs, labels)
+        loss.backward()
+        optimizer.step()
+```
+Explanation of the task: This problem tests the candidate's understanding of computer vision, deep learning, and the PyTorch framework, reflecting their ability to create and train models for real-world applications.
+
+### Question 3: Develop a sentiment analysis model using natural language processing (NLP) techniques in Python with the help of the NLTK library.
+Task Domain: Natural Language Processing
+Expected Good Response:  
+```
+import nltk
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+nltk.download('vader_lexicon')
+
+def analyze_sentiment(text):
+    sia = SentimentIntensityAnalyzer()
+    sentiment_score = sia.polarity_scores(text)
+    return sentiment_score
+```
+Explanation of the task: This problem tests the candidate's proficiency in NLP and their ability to apply it to sentiment analysis, a popular subfield with a wide range of applications in social media analysis, chatbots, and more.
+
+### Question 4: Implement a SwiftUI view that displays a list of items and allows the user to filter the list by a search query.
+Task Domain: iOS Development
+Expected Good Response:  
+```
+import SwiftUI
+
+struct FilteredListView: View {
+    @State private var searchText = ""
+
+    let items = ["Apple", "Banana", "Cherry", "Date", "Fig", "Grape"]
+
+    var filteredItems: [String] {
+        items.filter { searchText.isEmpty || $0.lowercased().contains(searchText.lowercased()) }
+    }
+
+    var body: some View {
+        NavigationView {
+            VStack {
+                TextField("Search", text: $searchText)
+                    .padding(.horizontal)
+                List(filteredItems, id: \.self) { item in
+                    Text(item)
+                }
+            }
+            .navigationBarTitle("Fruits")
+        }
+    }
+}
+```
+Explanation of the task: This problem tests the candidate's proficiency in SwiftUI, a modern framework for building user interfaces on Apple platforms, and their ability to create a responsive and dynamic UI.
+
+### Question 5: Design a RESTful API in Flask (Python) that allows users to create, read, update, and delete (CRUD) notes.
+Task Domain: Web Development
+Expected Good Response:  
+```
+from flask import Flask, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///notes.db'
+db = SQLAlchemy(app)
+ma = Marshmallow(app)
+
+class Note(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    content = db.Column(db.String(200), nullable=False)
+
+class NoteSchema(ma.SQLAlchemyAutoSchema):
+    class Meta:
+        model = Note
+
+note_schema = NoteSchema()
+notes_schema = NoteSchema(many=True)
+
+@app.route('/notes', methods=['POST'])
+def create_note():
+    content = request.json['content']
+    new_note = Note(content=content)
+    db.session.add(new_note)
+    db.session.commit()
+    return note_schema.dump(new_note)
+
+@app.route('/notes', methods=['GET'])
+def get_notes():
+    all_notes = Note.query.all()
+    return notes_schema.dump(all_notes)
+
+@app.route('/notes/<int:id>', methods=['GET'])
+def get_note(id):
+    note = Note.query.get_or_404(id)
+    return note_schema.dump(note)
+
+@app.route('/notes/<int:id>', methods=['PUT'])
+def update_note(id):
+    note = Note.query.get_or_404(id)
+    content = request.json['content']
+    note.content = content
+    db.session.commit()
+    return note_schema.dump(note)
+
+@app.route('/notes/<int:id>', methods=['DELETE'])
+def delete_note(id):
+    note = Note.query.get_or_404(id)
+    db.session.delete(note)
+    db.session.commit()
+    return note_schema.dump(note)
+
+if __name__ == '__main__':
+    app.run()
+```
+Explanation of the task: This problem tests the candidate's ability to design and implement a RESTful API using Flask, a popular web framework in Python, and assesses their understanding of CRUD operations and database management.
