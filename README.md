@@ -58,14 +58,13 @@ Many thanks to:
 
 ## Coding models tested & average scores:
 
-TODO: wizardLM-13B-1.0-GPTQ 
-
 | Model_Name                                                        | Avg_Scores | Colab_Link                                                                                                                                                                                                                                  | Date_Added | Link                                                      |
 | :---------------------------------------------------------------- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------- | :-------------------------------------------------------- |
 | Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) | 8.4        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Redmond_Hermes_Coder_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | 2023/07/03 | https://huggingface.co/TheBloke/Redmond-Hermes-Coder-GPTQ |
 | starchat-beta-GPTQ (using oobabooga/text-generation-webui)        | 7.6        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/starchat_beta_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>        | 2023/07/04 | https://huggingface.co/TheBloke/starchat-beta-GPTQ        |
 | wizard-vicuna-13B-GPTQ (using oobabooga/text-generation-webui)    | 7.3        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizard_vicuna_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>    | 2023/07/03 | https://huggingface.co/TheBloke/wizard-vicuna-13B-GPTQ    |
 | WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui)  | 5.9        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/WizardCoder_15B_1_0_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>  | 2023/07/03 | https://huggingface.co/TheBloke/WizardCoder-15B-1.0-GPTQ  |
+| wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui)     | 5.9        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizardLM_13B_1_0_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>     | 2023/05/29 | https://huggingface.co/TheBloke/wizardLM-13B-1.0-GPTQ  |
 
 ## Questions and scores
 Original responses can be found at: https://docs.google.com/spreadsheets/d/1ogDXUiaBx3t7EpMo44aaA6U6kLXX0x2tGRgLg8CISGs/edit?usp=sharing
@@ -710,6 +709,7 @@ Explanation of the task: This problem tests the candidate's proficiency in Pytho
 - WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui) : 5.5  
 - Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) : 10  
 - starchat-beta-GPTQ (using oobabooga/text-generation-webui) : 7.5  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 10  
 
 ### Question 2: Implement a computer vision model in PyTorch that can classify images of handwritten digits using the MNIST dataset.
 Task Domain: Computer Vision  
@@ -749,9 +749,10 @@ Explanation of the task: This problem tests the candidate's understanding of com
 - WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui) : 7.5  
 - Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) : 9.5  
 - starchat-beta-GPTQ (using oobabooga/text-generation-webui) : 9.5  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 4  
 
 ### Question 3: Develop a sentiment analysis model using natural language processing (NLP) techniques in Python with the help of the NLTK library.
-Task Domain: Natural Language Processing
+Task Domain: Natural Language Processing  
 Expected Good Response:  
 ```
 import nltk
@@ -769,6 +770,7 @@ Explanation of the task: This problem tests the candidate's proficiency in NLP a
 - WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui) : 9.5  
 - Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) : 7.5  
 - starchat-beta-GPTQ (using oobabooga/text-generation-webui) : 7.5  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 4  
 
 ### Question 4: Implement a SwiftUI view that displays a list of items and allows the user to filter the list by a search query.
 Task Domain: iOS Development
@@ -804,9 +806,10 @@ Explanation of the task: This problem tests the candidate's proficiency in Swift
 - WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui) : 3  
 - Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) : 5.5  
 - starchat-beta-GPTQ (using oobabooga/text-generation-webui) : 5  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 3  
 
 ### Question 5: Design a RESTful API in Flask (Python) that allows users to create, read, update, and delete (CRUD) notes.
-Task Domain: Web Development
+Task Domain: Web Development  
 Expected Good Response:  
 ```
 from flask import Flask, request, jsonify
@@ -870,3 +873,4 @@ Explanation of the task: This problem tests the candidate's ability to design an
 - WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui) : 4  
 - Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui) : 9.5  
 - starchat-beta-GPTQ (using oobabooga/text-generation-webui) : 8.5  
+- wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui) : 8.5  
