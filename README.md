@@ -31,6 +31,7 @@ NOTE:
 | Vicuna-13B-CoT-GPTQ (using oobabooga/text-generation-webui)                     | 8.75      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Vicuna_13B_CoT_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                     | 2023/06/09 | https://huggingface.co/TheBloke/Vicuna-13B-CoT-GPTQ                     |
 | WizardLM-13B-V1.1 (using oobabooga/text-generation-webui)                       | 8.66      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/WizardLM_13B_V1_1_GGML.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                  | 2023/07/17 | https://huggingface.co/TheBloke/WizardLM-13B-V1.1-GGML                  |
 | robin-13B-v2-GPTQ (using oobabooga/text-generation-webui)                       | 8.66      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/robin_13B_v2_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                       | 2023/06/19 | https://huggingface.co/TheBloke/robin-13B-v2-GPTQ                       |
+| llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui)               | 8.625     | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/llama_2_13B_Guanaco_QLoRA.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>               | 2023/07/21 | https://huggingface.co/TheBloke/llama-2-13B-Guanaco-QLoRA-GGML          |
 | mpt-7b-chat (in GPT4All)                                                        | 8.53      | No                                                                                                                                                                                                                                                        | 2023/05/11 | https://gpt4all.io/models/ggml-mpt-7b-chat.bin                          |
 | chronos-hermes-13B-GPTQ (using oobabooga/text-generation-webui)                 | 8.48125   | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/chronos_hermes_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                 | 2023/06/16 | https://huggingface.co/TheBloke/chronos-hermes-13B-GPTQ                 |
 | Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui)               | 8.46875   | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Luna_AI_Llama2_Uncensored.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>               | 2023/07/20 | https://huggingface.co/TheBloke/Luna-AI-Llama2-Uncensored-GGML          |
@@ -121,6 +122,7 @@ Explanation: This task tests the model's ability to understand and accurately tr
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 6  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 10  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 7.5  
 
 ### Question 2: Summarize the following text: "The water cycle is a natural process that involves the continuous movement of water on, above, and below the Earth's surface. It includes various stages like evaporation, condensation, precipitation, and runoff. This cycle plays a crucial role in maintaining Earth's water balance and supporting life."  
 Task Domain: Summary  
@@ -166,6 +168,7 @@ Explanation: This task evaluates the model's ability to extract the main points 
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 8  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 7.5  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 1  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 10  
 
 ### Question 3: I want you to act as a senior software developer with deep knowledge in system design, frontend programming, and backend programming. Provide a high level design of a mental health journal app. Include the frontend and backend components. Do not write code.  
 Task Domain: App Design  
@@ -210,6 +213,7 @@ Explanation: This task evaluates the model's ability to closely follow user's in
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 10  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 9.5  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 10  
 
 ### Question 4: What are the main causes of the French Revolution according to this passage: "The French Revolution, which took place between 1789 and 1799, was rooted in financial crises, social inequality, and Enlightenment ideas."  
 Task Domain: Abstractive Question Answering  
@@ -255,6 +259,7 @@ Explanation: This task tests the model's ability to understand the context and g
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 10  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 10  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 8  
 
 ### Question 5: In the following text, identify the two artists mentioned: "During the Renaissance, Leonardo da Vinci and Michelangelo were two of the most influential artists who created masterpieces that continue to inspire people today."  
 Task Domain: Extractive Question Answering  
@@ -300,6 +305,7 @@ Explanation: This task assesses the model's ability to extract specific informat
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 10  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 10  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 10  
 
 ### Question 6: Determine the sentiment of this customer review: "I had a fantastic experience at this restaurant. The food was delicious, and the service was outstanding."  
 Task Domain: Sentiment Analysis  
@@ -345,6 +351,7 @@ Explanation: This task evaluates the model's ability to analyze text and identif
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 10  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 10  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 10  
 
 ### Question 7: Classify the following text into one of these categories: Sports, Technology, Health, or Politics: "Apple recently unveiled its latest iPhone, featuring a faster processor and improved battery life."  
 Task Domain: Zero-shot Classification  
@@ -390,6 +397,7 @@ Explanation: This task tests the model's ability to classify text into predefine
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 10  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 2  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 10  
 
 ### Question 8: Complete the following sentence by filling in the blank: "The capital city of France is _______."  
 Task Domain: Mask Filling  
@@ -435,6 +443,7 @@ Explanation: This task assesses the model's ability to understand context and ge
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 10  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 10  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 10  
 
 ### Question 9: Write a rhyming couplet about nature.  
 Task Domain: Poetry Generation  
@@ -481,6 +490,7 @@ Explanation: This task tests the model's ability to generate creative and cohere
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 9  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 4  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 7  
 
 ### Question 10: Based on the following statement, determine if the author's opinion is for or against nuclear energy: "Nuclear energy is a powerful source, but the potential risks and radioactive waste management issues make it a dangerous choice."  
 Task Domain: Opinion Detection  
@@ -526,6 +536,7 @@ Explanation: This task evaluates the model's ability to understand and identify 
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 10  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 10  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 8.5  
 
 ### Question 11: Rewrite the following sentence in passive voice: "The dog chased the cat."  
 Task Domain: Text Rewriting  
@@ -571,6 +582,7 @@ Explanation: This task tests the model's ability to manipulate and rewrite text 
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 10  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 10  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 10  
 
 ### Question 12: Use the retrieved context to answer a question. Context does not contain the answer. (Prompt too long. See spreadsheet for original prompt)
 Task Domain: Document Question Answering  
@@ -616,6 +628,7 @@ Explanation: This task tests the model's ability to understand context and answe
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 1  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 1  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 10  
 
 ### Question 13: Use the retrieved context to answer a question. Context contains the answer. (Prompt too long. See spreadsheet for original prompt)
 Task Domain: Document Question Answering  
@@ -661,6 +674,7 @@ Explanation: This task tests the model's ability to understand context and answe
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 7.5  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 7.4  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 10  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 10  
 
 ### Question 14: What is the square root of banana?
 Task Domain: Mathematical Reasoning  
@@ -706,6 +720,7 @@ Explanation: This task tests the model's ability to recognize questions that are
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 10  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 1  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 10  
 
 ### Question 15: Extract the sender's name and address from the following text: "Dear Troy, Thanks for sharing your thoughts on document qa with Claude LLM and your comments on Tim's thoughts. My address is 5000 Forbes Ave, Pittsburgh, PA 15213. Best, Alex." Respond in JSON with one field for name and the other field for address.
 Task Domain: Information Extraction  
@@ -751,6 +766,7 @@ Explanation: This task tests the model's ability to extract specific information
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 10  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 10  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 10  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 4  
 
 ### Question 16: Given the following list of words. Categorize the words into 5 categories by similarity. Give each category a name. Respond in a python dictionary with key as the category name and value as a list of words in that category. List of words: ['Quagmire', 'Luminous', 'Melancholy', 'Perplexed', 'Jubilant', 'Enigmatic', 'Ambiguous', 'Ravenous', 'Obsolete', 'Tenacious', 'Euphoric', 'Wistful', 'Clandestine', 'Insidious', 'Inquisitive', 'Resilient', 'Surreptitious', 'Serendipity', 'Idiosyncratic', 'Juxtaposition']
 Task Domain: Categorization  
@@ -803,6 +819,7 @@ Explanation: This task tests the model's ability to categorize a list of words i
 - Luna-AI-Llama2-Uncensored (using oobabooga/text-generation-webui) : 4  
 - MythoLogic-13B (using oobabooga/text-generation-webui) : 4  
 - Redmond-Puffin-13B (using oobabooga/text-generation-webui) : 4  
+- llama-2-13B-Guanaco-QLoRA (using oobabooga/text-generation-webui) : 3  
 
 ## Coding questions and answers
 
