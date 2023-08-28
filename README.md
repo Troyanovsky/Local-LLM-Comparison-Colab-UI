@@ -10,7 +10,7 @@ These models work better among the models I tested on my hardware (i5-12490F, 32
 (Note: Because llama.cpp has made some breaking changes to the support of older ggml models. Some older ggml versions listed below may not work properly on current llama.cpp. But there should be GPTQ equivalents or newer ggml versions for the models.)
 
 NOTE:
-- Major edit on June 30, 2023. Since I noticed GPT-4 started to give more granular scores and tends to give higher scores, I have decided to re-run the tests for all models so they can be compared. The scores in the table below are the average of the scores from the latest tests. The scores in the table below are not comparable to the scores in the previous versions of this README.
+- Major edit on June 30, 2023. Since I noticed GPT-4 started to give more granular scores and tends to give higher scores, I have decided to re-run the tests for all models so they can be compared (All evaluations done with GPT-4-0613 for consistency). The scores in the table below are the average of the scores from the latest tests. The scores in the table below are not comparable to the scores in the previous versions of this README.
 
 | Model_Name                                                                      | Avg_Score | Colab_Link                                                                                                                                                                                                                                                    | Date_Added | Link                                                                    |
 | :------------------------------------------------------------------------------ | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------- | :---------------------------------------------------------------------- |
@@ -86,17 +86,21 @@ Many thanks to:
 ❤️ The Bloke for quantization of the models: https://huggingface.co/TheBloke  
 
 ## Coding models tested & average scores:
+(All scores are from GPT-4-0613.)
 
-| Model_Name                                                           | Avg_Scores | Colab_Link                                                                                                                                                                                                                                            | Date_Added | Link                                                              |
-| :------------------------------------------------------------------- | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :---------------------------------------------------------------- |
-| Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui)    | 8.4        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Redmond_Hermes_Coder_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>           | 2023/07/03 | https://huggingface.co/TheBloke/Redmond-Hermes-Coder-GPTQ         |
-| CodeUp-Alpha-13B-HF (using oobabooga/text-generation-webui)          | 7.9        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/CodeUp_Alpha_13B_HF.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>        | 2023/08/15 | https://huggingface.co/TheBloke/CodeUp-Alpha-13B-HF-GGML         |
-| starchat-beta-GPTQ (using oobabooga/text-generation-webui)           | 7.6        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/starchat_beta_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                  | 2023/07/04 | https://huggingface.co/TheBloke/starchat-beta-GPTQ                |
-| wizard-vicuna-13B-GPTQ (using oobabooga/text-generation-webui)       | 7.3        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizard_vicuna_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>              | 2023/07/03 | https://huggingface.co/TheBloke/wizard-vicuna-13B-GPTQ            |
-| WizardCoder-Guanaco-15B-V1.1 (using oobabooga/text-generation-webui) | 7.1        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/WizardCoder_Guanaco_15B_V1_1.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>        | 2023/07/21 | https://huggingface.co/TheBloke/WizardCoder-Guanaco-15B-V1.1-GPTQ |
-| CodeUp-Llama-2-13B-Chat-HF (using oobabooga/text-generation-webui)   | 6          | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/CodeUp_Llama_2_13B_Chat_HF.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | 2023/08/03 | https://huggingface.co/TheBloke/CodeUp-Llama-2-13B-Chat-HF-GGML   |
-| WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui)     | 5.9        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/WizardCoder_15B_1_0_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>            | 2023/07/03 | https://huggingface.co/TheBloke/WizardCoder-15B-1.0-GPTQ          |
-| wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui)        | 5.9        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizardLM_13B_1_0_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>               | 2023/05/29 | https://huggingface.co/TheBloke/wizardLM-13B-1.0-GPTQ             |
+| Model_Name                                                           | Avg_Scores | Colab_Link                                                                                                                                                                                                                                             | Date_Added | Link                                                              |
+| :------------------------------------------------------------------- | :--------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :---------------------------------------------------------------- |
+| CodeLlama-13B-oasst-sft-v10 (using oobabooga/text-generation-webui)  | 9.8        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/CodeLlama_13B_oasst_sft_v10.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | 2023/08/28 | https://huggingface.co/TheBloke/CodeLlama-13B-oasst-sft-v10-GGUF  |
+| WizardCoder-Python-13B-V1.0 (using oobabooga/text-generation-webui)  | 9.5        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/WizardCoder_Python_13B_V1_0.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | 2023/08/28 | https://huggingface.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF  |
+| Redmond-Hermes-Coder-GPTQ (using oobabooga/text-generation-webui)    | 8.4        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Redmond_Hermes_Coder_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>            | 2023/07/03 | https://huggingface.co/TheBloke/Redmond-Hermes-Coder-GPTQ         |
+| CodeUp-Alpha-13B-HF (using oobabooga/text-generation-webui)          | 7.9        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/CodeUp_Alpha_13B_HF.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>         | 2023/08/15 | https://huggingface.co/TheBloke/CodeUp-Alpha-13B-HF-GGML          |
+| starchat-beta-GPTQ (using oobabooga/text-generation-webui)           | 7.6        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/starchat_beta_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                   | 2023/07/04 | https://huggingface.co/TheBloke/starchat-beta-GPTQ                |
+| wizard-vicuna-13B-GPTQ (using oobabooga/text-generation-webui)       | 7.3        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizard_vicuna_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>               | 2023/07/03 | https://huggingface.co/TheBloke/wizard-vicuna-13B-GPTQ            |
+| WizardCoder-Guanaco-15B-V1.1 (using oobabooga/text-generation-webui) | 7.1        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/WizardCoder_Guanaco_15B_V1_1.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>         | 2023/07/21 | https://huggingface.co/TheBloke/WizardCoder-Guanaco-15B-V1.1-GPTQ |
+| CodeLlama-13B-Instruct (using oobabooga/text-generation-webui)       | 7          | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/CodeLlama_13B_Instruct.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>      | 2023/08/28 | https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF   |
+| CodeUp-Llama-2-13B-Chat-HF (using oobabooga/text-generation-webui)   | 6          | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/CodeUp_Llama_2_13B_Chat_HF.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>  | 2023/08/03 | https://huggingface.co/TheBloke/CodeUp-Llama-2-13B-Chat-HF-GGML   |
+| WizardCoder-15B-1.0-GPTQ (using oobabooga/text-generation-webui)     | 5.9        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/WizardCoder_15B_1_0_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>             | 2023/07/03 | https://huggingface.co/TheBloke/WizardCoder-15B-1.0-GPTQ          |
+| wizardLM-13B-1.0-GPTQ (using oobabooga/text-generation-webui)        | 5.9        | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/wizardLM_13B_1_0_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                | 2023/05/29 | https://huggingface.co/TheBloke/wizardLM-13B-1.0-GPTQ             |
 
 ## Questions and scores
 Original responses can be found at: https://docs.google.com/spreadsheets/d/1ogDXUiaBx3t7EpMo44aaA6U6kLXX0x2tGRgLg8CISGs/edit?usp=sharing
@@ -1209,6 +1213,9 @@ Explanation of the task: This problem tests the candidate's proficiency in Pytho
 - WizardCoder-Guanaco-15B-V1.1 (using oobabooga/text-generation-webui) : 7.5  
 - CodeUp-Llama-2-13B-Chat-HF (using oobabooga/text-generation-webui) : 3  
 - CodeUp-Alpha-13B-HF (using oobabooga/text-generation-webui) : 6.5  
+- WizardCoder-Python-13B-V1.0 (using oobabooga/text-generation-webui) : 9.5  
+- CodeLlama-13B-oasst-sft-v10 (using oobabooga/text-generation-webui) : 10  
+- CodeLlama-13B-Instruct (using oobabooga/text-generation-webui) : 10  
 
 ### Question 2: Implement a computer vision model in PyTorch that can classify images of handwritten digits using the MNIST dataset.
 Task Domain: Computer Vision  
@@ -1252,6 +1259,9 @@ Explanation of the task: This problem tests the candidate's understanding of com
 - WizardCoder-Guanaco-15B-V1.1 (using oobabooga/text-generation-webui) : 9.5  
 - CodeUp-Llama-2-13B-Chat-HF (using oobabooga/text-generation-webui) : 9.5  
 - CodeUp-Llama-2-13B-Chat-HF (using oobabooga/text-generation-webui) : 9.5  
+- WizardCoder-Python-13B-V1.0 (using oobabooga/text-generation-webui) : 9.5  
+- CodeLlama-13B-oasst-sft-v10 (using oobabooga/text-generation-webui) : 9.5  
+- CodeLlama-13B-Instruct (using oobabooga/text-generation-webui) : 8.5  
 
 ### Question 3: Develop a sentiment analysis model using natural language processing (NLP) techniques in Python with the help of the NLTK library.
 Task Domain: Natural Language Processing  
@@ -1276,6 +1286,9 @@ Explanation of the task: This problem tests the candidate's proficiency in NLP a
 - WizardCoder-Guanaco-15B-V1.1 (using oobabooga/text-generation-webui) : 5  
 - CodeUp-Llama-2-13B-Chat-HF (using oobabooga/text-generation-webui) : 5  
 - CodeUp-Alpha-13B-HF (using oobabooga/text-generation-webui) : 8.5  
+- WizardCoder-Python-13B-V1.0 (using oobabooga/text-generation-webui) : 9.5  
+- CodeLlama-13B-oasst-sft-v10 (using oobabooga/text-generation-webui) : 9.5  
+- CodeLlama-13B-Instruct (using oobabooga/text-generation-webui) : 4  
 
 ### Question 4: Implement a SwiftUI view that displays a list of items and allows the user to filter the list by a search query.
 Task Domain: iOS Development
@@ -1315,6 +1328,9 @@ Explanation of the task: This problem tests the candidate's proficiency in Swift
 - WizardCoder-Guanaco-15B-V1.1 (using oobabooga/text-generation-webui) : 4  
 - CodeUp-Llama-2-13B-Chat-HF (using oobabooga/text-generation-webui) : 4  
 - CodeUp-Alpha-13B-HF (using oobabooga/text-generation-webui) : 6.5  
+- WizardCoder-Python-13B-V1.0 (using oobabooga/text-generation-webui) : 9.5  
+- CodeLlama-13B-oasst-sft-v10 (using oobabooga/text-generation-webui) : 10  
+- CodeLlama-13B-Instruct (using oobabooga/text-generation-webui) : 4  
 
 ### Question 5: Design a RESTful API in Flask (Python) that allows users to create, read, update, and delete (CRUD) notes.
 Task Domain: Web Development  
@@ -1385,3 +1401,6 @@ Explanation of the task: This problem tests the candidate's ability to design an
 - WizardCoder-Guanaco-15B-V1.1 (using oobabooga/text-generation-webui) : 9.5  
 - CodeUp-Llama-2-13B-Chat-HF (using oobabooga/text-generation-webui) : 8.5  
 - CodeUp-Alpha-13B-HF (using oobabooga/text-generation-webui) : 8.5  
+- WizardCoder-Python-13B-V1.0 (using oobabooga/text-generation-webui) : 9.5  
+- CodeLlama-13B-oasst-sft-v10 (using oobabooga/text-generation-webui) : 10  
+- CodeLlama-13B-Instruct (using oobabooga/text-generation-webui) : 8.5  
