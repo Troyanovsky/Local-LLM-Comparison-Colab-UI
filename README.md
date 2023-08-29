@@ -21,7 +21,7 @@ NOTE:
 | airoboros-13B-gpt4-1.4-GPTQ (using oobabooga/text-generation-webui)             | 9.50      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/airoboros_13B_gpt4_1_4_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                 | 2023/06/30 | https://huggingface.co/TheBloke/airoboros-13B-gpt4-1.4-GPTQ             |
 | Nous-Hermes-13B-GPTQ (using oobabooga/text-generation-webui)                    | 9.44      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Nous_Hermes_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                        | 2023/06/03 | https://huggingface.co/TheBloke/Nous-Hermes-13B-GPTQ/tree/main          |
 | Dolphin-Llama-13B (using oobabooga/text-generation-webui)                       | 9.38      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Dolphin_Llama_13B.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                           | 2023/07/24 | https://huggingface.co/TheBloke/Dolphin-Llama-13B-GGML                  |
-| OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui)                  | 9.37      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/OpenOrca_Platypus2_13B.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>             | 2023/08/15 | https://huggingface.co/TheBloke/OpenOrca-Platypus2-13B-GGML                  |
+| OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui)                  | 9.37      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/OpenOrca_Platypus2_13B.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>             | 2023/08/15 | https://huggingface.co/TheBloke/OpenOrca-Platypus2-13B-GGML             |
 | airoboros-l2-13b-gpt4-2.0 (using oobabooga/text-generation-webui)               | 9.34      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/airoboros_l2_13b_gpt4_2_0.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>          | 2023/08/01 | https://huggingface.co/TheBloke/airoboros-l2-13b-gpt4-2.0-GGML          |
 | Chronos-13B-v2 (using oobabooga/text-generation-webui)                          | 9.31      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/Chronos_13B_v2.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                     | 2023/08/09 | https://huggingface.co/TheBloke/Chronos-13B-v2-GGML                     |
 | vicuna-13b-v1.3.0-GPTQ (using oobabooga/text-generation-webui)                  | 9.31      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/vicuna_13b_v1_3_0_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                      | 2023/06/29 | https://huggingface.co/TheBloke/vicuna-13b-v1.3.0-GPTQ                  |
@@ -29,6 +29,7 @@ NOTE:
 | Selfee-13B-GPTQ (using oobabooga/text-generation-webui)                         | 9.28      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Selfee_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                             | 2023/06/07 | https://huggingface.co/TheBloke/Selfee-13B-GPTQ                         |
 | WizardLM-13B-V1.2 (using oobabooga/text-generation-webui)                       | 9.28      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/WizardLM_13B_V1_2.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                  | 2023/07/26 | https://huggingface.co/TheBloke/WizardLM-13B-V1.2-GGML                  |
 | minotaur-13B-GPTQ (using oobabooga/text-generation-webui)                       | 9.28      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/minotaur_13B_GPTQ.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                           | 2023/06/09 | https://huggingface.co/TheBloke/minotaur-13B-GPTQ                       |
+| PuddleJumper-13B (using oobabooga/text-generation-webui)                        | 9.1875    | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/PuddleJumper_13B.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                   | 2023/08/29 | https://huggingface.co/TheBloke/PuddleJumper-13B-GGUF                       |
 | Nous-Hermes-Llama2 (using oobabooga/text-generation-webui)                      | 9.17      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/Nous_Hermes_Llama2.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                          | 2023/07/24 | https://huggingface.co/TheBloke/Nous-Hermes-Llama2-GGML                 |
 | MythoBoros-13B (using oobabooga/text-generation-webui)                          | 9.15      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-comparison/blob/main/MythoBoros_13B.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                              | 2023/07/24 | https://huggingface.co/TheBloke/MythoBoros-13B-GGML                     |
 | 13B-Ouroboros (using oobabooga/text-generation-webui)                           | 9.11      | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/13B_Ouroboros.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>                      | 2023/07/27 | https://huggingface.co/TheBloke/13B-Ouroboros-GGML                      |
@@ -171,6 +172,7 @@ Explanation: This task tests the model's ability to understand and accurately tr
 - Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 7.5  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 2: Summarize the following text: "The water cycle is a natural process that involves the continuous movement of water on, above, and below the Earth's surface. It includes various stages like evaporation, condensation, precipitation, and runoff. This cycle plays a crucial role in maintaining Earth's water balance and supporting life."  
 Task Domain: Summary  
@@ -238,6 +240,7 @@ Explanation: This task evaluates the model's ability to extract the main points 
 - Platypus2-13B (using oobabooga/text-generation-webui) : 7.5  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 9  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 9.5  
 
 ### Question 3: I want you to act as a senior software developer with deep knowledge in system design, frontend programming, and backend programming. Provide a high level design of a mental health journal app. Include the frontend and backend components. Do not write code.  
 Task Domain: App Design  
@@ -304,6 +307,7 @@ Explanation: This task evaluates the model's ability to closely follow user's in
 - Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 4: What are the main causes of the French Revolution according to this passage: "The French Revolution, which took place between 1789 and 1799, was rooted in financial crises, social inequality, and Enlightenment ideas."  
 Task Domain: Abstractive Question Answering  
@@ -371,6 +375,7 @@ Explanation: This task tests the model's ability to understand the context and g
 - Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 5: In the following text, identify the two artists mentioned: "During the Renaissance, Leonardo da Vinci and Michelangelo were two of the most influential artists who created masterpieces that continue to inspire people today."  
 Task Domain: Extractive Question Answering  
@@ -438,6 +443,7 @@ Explanation: This task assesses the model's ability to extract specific informat
 - Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 6: Determine the sentiment of this customer review: "I had a fantastic experience at this restaurant. The food was delicious, and the service was outstanding."  
 Task Domain: Sentiment Analysis  
@@ -505,6 +511,7 @@ Explanation: This task evaluates the model's ability to analyze text and identif
 - Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 7: Classify the following text into one of these categories: Sports, Technology, Health, or Politics: "Apple recently unveiled its latest iPhone, featuring a faster processor and improved battery life."  
 Task Domain: Zero-shot Classification  
@@ -572,6 +579,7 @@ Explanation: This task tests the model's ability to classify text into predefine
 - Platypus2-13B (using oobabooga/text-generation-webui) : 4  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 8: Complete the following sentence by filling in the blank: "The capital city of France is _______."  
 Task Domain: Mask Filling  
@@ -639,6 +647,7 @@ Explanation: This task assesses the model's ability to understand context and ge
 - Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 9: Write a rhyming couplet about nature.  
 Task Domain: Poetry Generation  
@@ -707,6 +716,7 @@ Explanation: This task tests the model's ability to generate creative and cohere
 - Platypus2-13B (using oobabooga/text-generation-webui) : 6  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 7.5  
 
 ### Question 10: Based on the following statement, determine if the author's opinion is for or against nuclear energy: "Nuclear energy is a powerful source, but the potential risks and radioactive waste management issues make it a dangerous choice."  
 Task Domain: Opinion Detection  
@@ -774,6 +784,7 @@ Explanation: This task evaluates the model's ability to understand and identify 
 - Platypus2-13B (using oobabooga/text-generation-webui) : 9  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 4  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 11: Rewrite the following sentence in passive voice: "The dog chased the cat."  
 Task Domain: Text Rewriting  
@@ -841,6 +852,7 @@ Explanation: This task tests the model's ability to manipulate and rewrite text 
 - Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 12: Use the retrieved context to answer a question. Context does not contain the answer. (Prompt too long. See spreadsheet for original prompt)
 Task Domain: Document Question Answering  
@@ -908,6 +920,7 @@ Explanation: This task tests the model's ability to understand context and answe
 - Platypus2-13B (using oobabooga/text-generation-webui) : 1  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 13: Use the retrieved context to answer a question. Context contains the answer. (Prompt too long. See spreadsheet for original prompt)
 Task Domain: Document Question Answering  
@@ -975,6 +988,7 @@ Explanation: This task tests the model's ability to understand context and answe
 - Platypus2-13B (using oobabooga/text-generation-webui) : 8  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 7.4  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 4  
 
 ### Question 14: What is the square root of banana?
 Task Domain: Mathematical Reasoning  
@@ -1042,6 +1056,7 @@ Explanation: This task tests the model's ability to recognize questions that are
 - Platypus2-13B (using oobabooga/text-generation-webui) : 1  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 10  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 7.5  
 
 ### Question 15: Extract the sender's name and address from the following text: "Dear Troy, Thanks for sharing your thoughts on document qa with Claude LLM and your comments on Tim's thoughts. My address is 5000 Forbes Ave, Pittsburgh, PA 15213. Best, Alex." Respond in JSON with one field for name and the other field for address.
 Task Domain: Information Extraction  
@@ -1109,6 +1124,7 @@ Explanation: This task tests the model's ability to extract specific information
 - Platypus2-13B (using oobabooga/text-generation-webui) : 4  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 4  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 4  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 10  
 
 ### Question 16: Given the following list of words. Categorize the words into 5 categories by similarity. Give each category a name. Respond in a python dictionary with key as the category name and value as a list of words in that category. List of words: ['Quagmire', 'Luminous', 'Melancholy', 'Perplexed', 'Jubilant', 'Enigmatic', 'Ambiguous', 'Ravenous', 'Obsolete', 'Tenacious', 'Euphoric', 'Wistful', 'Clandestine', 'Insidious', 'Inquisitive', 'Resilient', 'Surreptitious', 'Serendipity', 'Idiosyncratic', 'Juxtaposition']
 Task Domain: Categorization  
@@ -1183,6 +1199,7 @@ Explanation: This task tests the model's ability to categorize a list of words i
 - Platypus2-13B (using oobabooga/text-generation-webui) : 2  
 - Camel-Platypus2-13B (using oobabooga/text-generation-webui) : 8.5  
 - OpenOrca-Platypus2-13B (using oobabooga/text-generation-webui) : 8.5  
+- PuddleJumper-13B (using oobabooga/text-generation-webui) : 8.5  
 
 ## Coding questions and answers
 
