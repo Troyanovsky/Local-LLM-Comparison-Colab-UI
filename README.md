@@ -81,6 +81,11 @@ These models can be run on consumer hardware and are generally good (from Reddit
 | DeepSeek-Coder-V2-Lite-Instruct-GGUF         | https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Lite-Instruct-GGUF                             | <a target="_blank" href="https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/DeepSeek_Coder_V2_Lite_Instruct_GGUF.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>         | 2024/06/27 | 16B; Instruct coding model                                                        |
 
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Troyanovsky/Local-LLM-Comparison-Colab-UI&type=Date)](https://star-history.com/#Troyanovsky/Local-LLM-Comparison-Colab-UI&Date)
+
+
 ## Older Models with Scores:
 These models work better among the models I tested on my hardware (i5-12490F, 32GB RAM, RTX 3060 Ti GDDR6X 8GB VRAM):
 (Note: Because llama.cpp has made some breaking changes to the support of older ggml models. Some older ggml versions listed below may not work properly on current llama.cpp. But there should be GPTQ equivalents or newer ggml versions for the models.)
