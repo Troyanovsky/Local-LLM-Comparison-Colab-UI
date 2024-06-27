@@ -85,6 +85,9 @@ These models can be run on consumer hardware and are generally good (from Reddit
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Troyanovsky/Local-LLM-Comparison-Colab-UI&type=Date)](https://star-history.com/#Troyanovsky/Local-LLM-Comparison-Colab-UI&Date)
 
+<details>
+
+<summary> Older Models with Scores </summary>
 
 ## Older Models with Scores:
 These models work better among the models I tested on my hardware (i5-12490F, 32GB RAM, RTX 3060 Ti GDDR6X 8GB VRAM):
@@ -1689,3 +1692,5 @@ Explanation of the task: This problem tests the candidate's ability to design an
 - WizardCoder-Python-13B-V1.0 (using oobabooga/text-generation-webui) : 9.5  
 - CodeLlama-13B-oasst-sft-v10 (using oobabooga/text-generation-webui) : 10  
 - CodeLlama-13B-Instruct (using oobabooga/text-generation-webui) : 8.5  
+
+</details>
