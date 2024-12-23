@@ -122,6 +122,18 @@ These models can be run on consumer hardware and are generally good (from Reddit
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Troyanovsky/Local-LLM-Comparison-Colab-UI&type=Date)](https://star-history.com/#Troyanovsky/Local-LLM-Comparison-Colab-UI&Date)
 
+## Share This Project
+
+If you find this project helpful, please share it:
+
+### Quick Share Links:
+- **[Facebook](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fgithub.com%2FTroyanovsky%2FLocal-LLM-Comparison-Colab-UI)**  
+- **[Reddit](https://reddit.com/submit?url=https%3A%2F%2Fgithub.com%2FTroyanovsky%2FLocal-LLM-Comparison-Colab-UI&title=Run%20Local%20LLMs%20Easily%20with%20Google%20Colab%21)**  
+- **[Twitter](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FTroyanovsky%2FLocal-LLM-Comparison-Colab-UI&text=Run%20Local%20LLMs%20Easily%20with%20Google%20Colab%21&via=Troyanovsky&hashtags=LLMs%2CAI%2COpenSource)**  
+- **[LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2FTroyanovsky%2FLocal-LLM-Comparison-Colab-UI)**  
+- **[VK](http://vk.com/share.php?url=https%3A%2F%2Fgithub.com%2FTroyanovsky%2FLocal-LLM-Comparison-Colab-UI&title=Run%20Local%20LLMs%20Easily%20with%20Google%20Colab%21&comment=Explore%20accessible%20LLMs%20for%20your%20needs%21)**  
+- **[Email](mailto:?subject=Run%20Local%20LLMs%20Easily%20with%20Google%20Colab%21&body=Check%20out%20this%20project%3A%20https%3A%2F%2Fgithub.com%2FTroyanovsky%2FLocal-LLM-Comparison-Colab-UI%20It%20makes%20running%20LLMs%20accessible%20and%20easy%20using%20Google%20Colab.)**
+
 <details>
 
 <summary> Older Models with Scores </summary>
